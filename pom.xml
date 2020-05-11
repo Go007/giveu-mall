@@ -8,6 +8,7 @@
 
 	<modules>
 		<module>giveu-shop-common</module>
+		<module>giveu-shop-id</module>
 	</modules>
 
 	<parent>

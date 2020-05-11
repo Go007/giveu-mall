@@ -1,6 +1,6 @@
 package com.dafycredit.common.model;
 
-public class JsonResult {
+public class Result<T> {
 
 	public static final Integer CODE_SUCCESS = 1;
 	public static final Integer CODE_FAILURE = 0;
@@ -21,35 +21,35 @@ public class JsonResult {
 	/**
 	 * 业务数据
 	 */
-	private Object data;
+	private T data;
 
-	public JsonResult() {
+	public Result() {
 		this.code = CODE_SUCCESS;
 		this.msg = MSG_SUCCESS;
 	}
 
-	public JsonResult(Integer code) {
+	public Result(Integer code) {
 		this.code = code;
 	}
 
-	public JsonResult(Integer code, String msg) {
+	public Result(Integer code, String msg) {
 		this.code = code;
 		this.msg = msg;
 	}
 
-	public JsonResult(Integer code, String msg, String url) {
+	public Result(Integer code, String msg, String url) {
 		this.code = code;
 		this.msg = msg;
 		this.url = url;
 	}
 
-	public JsonResult(Integer code, String msg, Object data) {
+	public Result(Integer code, String msg, T data) {
 		this.code = code;
 		this.msg = msg;
 		this.data = data;
 	}
 
-	public JsonResult(Integer code, String msg, String url, Object data) {
+	public Result(Integer code, String msg, String url, T data) {
 		this.code = code;
 		this.msg = msg;
 		this.url = url;
@@ -84,13 +84,13 @@ public class JsonResult {
 		return data;
 	}
 
-	public void setData(Object data) {
+	public void setData(T data) {
 		this.data = data;
 	}
 
 	@Override
 	public String toString() {
-		return "JsonResult{" + "code=" + code + ", msg=" + msg + ", url='" + url + '\'' + ", data=" + data + '}';
+		return "Result{" + "code=" + code + ", msg=" + msg + ", url='" + url + '\'' + ", data=" + data + '}';
 	}
 	
 }

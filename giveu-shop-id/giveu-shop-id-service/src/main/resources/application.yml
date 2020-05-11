@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: giveu-shop-id-service
+  profiles:
+    active: dev
+  output:
+    ansi:
+      enabled: ALWAYS
+  http:
+    encoding:
+      force: true      
+#  cloud:
+#    config:
+#      label: dev
+#      uri: http://10.10.11.139:1040
+
+#mybatis:
+#  typeAliasesPackage: com.dafycredit.id.bean
+#  mapperLocations: classpath*:com/dafycredit/id/mapper/*.xml
+#  check-config-location: true
+#  config-location: classpath:mybatis/mybatis-config.xml
+
+#pagehelper:
+#  helperDialect: mysql
+  
+#http工具类参数
+httpclient:
+  # 连接池最大连接数
+  connectionMaxTotal: 3000
+  # 每条路由最大连接数
+  connectionMaxPerRoute: 30
+  # 超时
+  connectionTimeout: 30000  
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql 
+  
+endpoints:
+  shutdown:
+    enabled: true
+    sensitive: false
+    

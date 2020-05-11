@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<project
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+        xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.dafycredit</groupId>
+        <artifactId>giveu-shop-id</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>giveu-shop-id-service</artifactId>
+    <name>giveu-shop-id-service</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.dafycredit</groupId>
+            <artifactId>giveu-shop-id-api</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jolokia</groupId>
+            <artifactId>jolokia-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-client</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
+        </dependency>
+
+        <!--zipkin跟踪 -->
+        <!-- 		<dependency> -->
+        <!-- 			<groupId>org.springframework.cloud</groupId> -->
+        <!-- 			<artifactId>spring-cloud-sleuth-stream</artifactId> -->
+        <!-- 			<version>${sleuth-stream.version}</version> -->
+        <!-- 		</dependency> -->
+        <dependency>
+            <groupId>org.springframework.integration</groupId>
+            <artifactId>spring-integration-jmx</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!-- 		<dependency> -->
+        <!-- 			<groupId>org.springframework.boot</groupId> -->
+        <!-- 			<artifactId>spring-boot-starter-cloud-connectors</artifactId> -->
+        <!-- 			<version>${spring_boot.version}</version> -->
+        <!-- 		</dependency> -->
+        <!-- 		<dependency> -->
+        <!-- 			<groupId>io.zipkin.java</groupId> -->
+        <!-- 			<artifactId>zipkin-server</artifactId> -->
+        <!-- 			<version>${zipkin.version}</version> -->
+        <!-- 		</dependency> -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-stream-rabbit</artifactId>
+        </dependency>
+        <!-- 		<dependency> -->
+        <!-- 			<groupId>org.springframework.cloud</groupId> -->
+        <!-- 			<artifactId>spring-cloud-starter-sleuth</artifactId> -->
+        <!-- 		</dependency> -->
+
+        <!-- 使用hystrix -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix</artifactId>
+        </dependency>
+
+        <!--for turbine stream -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-netflix-hystrix-stream</artifactId>
+        </dependency>
+
+        <!-- 热启动 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                            <goal>build-info</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
