@@ -12,5 +12,3 @@ build/*
 *.log.zip
 *.factorypath
 *.prefs
-.gitignore
-.idea/
