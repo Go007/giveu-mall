@@ -1,0 +1,16 @@
+.gradle
+.settings
+.classpath
+.project
+target
+.idea
+*.iml
+generatorConfig.xml
+doc
+build/*
+*.springBeans
+*.log.zip
+*.factorypath
+*.prefs
+.gitignore
+.idea/
