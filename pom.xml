@@ -7,19 +7,7 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>../giveu-shop-cloud</module>
-		<module>../giveu-shop-common</module>
-		<module>../giveu-shop-fn</module>
-		<module>../giveu-shop-goods</module>
-		<module>../giveu-shop-id</module>
-		<module>../giveu-shop-jd</module>
-		<module>../giveu-shop-order</module>
-		<module>../giveu-shop-pay</module>
-		<module>../giveu-shop-sys</module>
-		<module>../giveu-shop-web</module>
-		<module>../giveu-shop-task</module>
-		<module>../giveu-shop-oauth</module>
-	    <module>../giveu-shop-manage</module>
+		<module>giveu-shop-common</module>
 	</modules>
 
 	<parent>

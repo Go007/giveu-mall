@@ -1,0 +1,69 @@
+spring:
+  redis:
+    cluster:
+      nodes:
+      - 10.11.31.47:8021
+      - 10.11.31.47:8022
+      - 10.11.31.47:8023
+      - 10.11.31.47:8024
+      - 10.11.31.47:8025
+      - 10.11.31.47:8026  
+    pool:
+      # 连接池最大连接数（使用负值表示没有限制）
+      max-active: 500
+      # 连接池中的最小空闲连接
+      min-idle: 100
+      # 连接池中的最大空闲连接
+      max-idle: 500
+      # 连接池最大阻塞等待时间（使用负值表示没有限制）
+      max-wait: 1000
+
+
+  datasource:
+    url: jdbc:mysql://10.10.11.140:8066/TESTDB
+    name: shopdb
+    platform: mysql
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    # 大小、最小、最大
+    initialSize: 1
+    minIdle: 1
+    maxActive: 50
+    # 超时的时间
+    maxWait: 60000
+    # 间隔多久才进行一次检测, 毫秒
+    timeBetweenEvictionRunsMillis: 3600000
+    # 池中最小生存的时间
+    minEvictableIdleTimeMillis: 3600000
+    
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+
+    #  配置监控统计拦截的filters
+    filters: stat
+    
+    # 打开PSCache，并且指定每个连接上PSCache的大小(mysql不支持)
+    poolPreparedStatements: false
+    maxOpenPreparedStatements: 20  
+     
+  # rabbitmq config
+  rabbitmq:
+    host: 10.10.11.139
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: /
+    
+  # mongodb  
+  data:
+    mongodb:
+      uri: mongodb://127.0.0.1:27017/shake   
+      
+        
+mybatis:
+  mapper-locations: classpath*:com/dafycredit/*/mapper/*.xml
+  type-aliases-package: com.dafycredit.*.bean
