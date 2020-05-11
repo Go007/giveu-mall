@@ -1,0 +1,12 @@
+INSERT INTO `t_system_result_msg_dictionaries`(type, code, msg) VALUES ('sc', '801000,-9999,200112,200113,200114,200115,100700,200104,200109,200118,200123', '系统开小差了，请稍后再试哦');
+INSERT INTO `t_system_result_msg_dictionaries`(type, code, msg) VALUES ('sc', '200122', '订单支付失败，请重新支付');
+INSERT INTO `t_system_result_msg_dictionaries`(type, code, msg) VALUES ('sc', '200120', '商品已售罄，暂时无法购买');
+INSERT INTO `t_system_result_msg_dictionaries`(type, code, msg) VALUES ('sc', '200119', '您的订单因支付时间超时取消，请重新下单购买');
+INSERT INTO `t_system_result_msg_dictionaries`(type, code, msg) VALUES ('sc', '200105', '该商品暂时无货');
+INSERT INTO `t_system_result_msg_dictionaries`(type, code, msg) VALUES ('sc', '200004', '请填写收货地址');
+INSERT INTO `t_system_result_msg_dictionaries`(type, code, msg) VALUES ('sc', '800902', '您填写的信息暂时不符合开通要求，您可在首次申请6个月后重新申请');
+INSERT INTO `t_system_result_msg_dictionaries`(type, code, msg) VALUES ('sc', '800904', '您的钱包可用消费余额不足，保持良好信用可提升消费额度哦');
+INSERT INTO `t_system_result_msg_dictionaries`(type, code, msg) VALUES ('sc', '800905', '您存在逾期合同，暂时不能使用即有分期。请在应用市场下载“即有钱包”，还清逾期合同后使用');
+INSERT INTO `t_system_result_msg_dictionaries`(type, code, msg) VALUES ('sc', '800906', '您的信用存在异常，暂时无法使用即有分期');
+INSERT INTO `t_system_result_msg_dictionaries`(type, code, msg) VALUES ('sc', '800916', '抱歉,不能填已存在的家庭联系人姓名,请重新输入');
+INSERT INTO `t_system_result_msg_dictionaries`(type, code, msg) VALUES ('sc', '800917', '抱歉，不能填已存在的家庭联系人手机号,请重新输入');

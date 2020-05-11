@@ -1,0 +1,21 @@
+CREATE TABLE `t_user_equipment_info_log` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL COMMENT '用户注册Id',
+  `id_person` int(11) NOT NULL COMMENT '用户Id',
+  `platform` varchar(64) DEFAULT NULL COMMENT '平台',
+  `imei` varchar(64) DEFAULT NULL COMMENT 'IMEI',
+  `phone_operator` varchar(64) DEFAULT NULL COMMENT '运营商',
+  `phone_marker` varchar(64) DEFAULT NULL COMMENT '手机制造商',
+  `phone_model` varchar(64) DEFAULT NULL COMMENT '手机型号',
+  `os` varchar(64) DEFAULT NULL COMMENT '操作系统类型',
+  `os_version` varchar(64) DEFAULT NULL COMMENT '操作系统版本',
+  `resolution` varchar(64) DEFAULT NULL COMMENT '分辨率',
+  `internet_type` varchar(64) DEFAULT NULL COMMENT '网络类型',
+  `app_name` varchar(64) DEFAULT NULL COMMENT '移动端APP名称',
+  `is_emulator` varchar(64) DEFAULT NULL COMMENT '是否模拟器',
+  `app_version` varchar(64) DEFAULT NULL COMMENT 'App版本',
+  `status` int(1) DEFAULT NULL COMMENT '状态(0-未上报 1-上报成功 2-上报失败)',
+  `create_time` bigint(20) DEFAULT NULL COMMENT '创建时间',
+  `update_time` bigint(20) DEFAULT NULL COMMENT '更新时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='招联设备信息上报记录表'

@@ -1,0 +1,10 @@
+-- t_shop_alert_contact
+INSERT INTO t_shop_alert_contact (id, biz_code, biz_desc, phone, email, status, gmt_create, gmt_modified) VALUES (1, 1, '一般提醒', '13026602991', 'hudongzhu@dafycredit.com', 1, '2017-06-12 10:17:15.994', '2017-06-12 10:17:15.994');
+INSERT INTO t_shop_alert_contact (id, biz_code, biz_desc, phone, email, status, gmt_create, gmt_modified) VALUES (2, 2, '一般紧急告警', '13026602991', 'hudongzhu@dafycredit.com', 1, '2017-06-12 10:17:15.994', '2017-06-12 10:17:15.994');
+INSERT INTO t_shop_alert_contact (id, biz_code, biz_desc, phone, email, status, gmt_create, gmt_modified) VALUES (3, 3, 'JD返回信息警告', '13026602991', 'hudongzhu@dafycredit.com', 1, '2017-06-12 10:17:15.994', '2017-06-12 10:17:15.994');
+INSERT INTO t_shop_alert_contact (id, biz_code, biz_desc, phone, email, status, gmt_create, gmt_modified) VALUES (4, 4, '余额不足', '13026602991', 'hudongzhu@dafycredit.com', 1, '2017-06-12 10:17:15.994', '2017-06-12 10:17:15.994');
+INSERT INTO t_shop_alert_contact (id, biz_code, biz_desc, phone, email, status, gmt_create, gmt_modified) VALUES (5, 5, '余额阈值预警', '13026602991', 'hudongzhu@dafycredit.com', 1, '2017-06-12 10:17:15.994', '2017-06-12 10:17:15.994');
+INSERT INTO t_shop_alert_contact (id, biz_code, biz_desc, phone, email, status, gmt_create, gmt_modified) VALUES (6, 6, 'token定时刷新失败', '13026602991', 'hudongzhu@dafycredit.com', 1, '2017-06-12 10:17:15.994', '2017-06-12 10:17:15.994');
+INSERT INTO t_shop_alert_contact (id, biz_code, biz_desc, phone, email, status, gmt_create, gmt_modified) VALUES (7, 7, 'token过期', '13026602991', 'hudongzhu@dafycredit.com', 1, '2017-06-12 10:17:15.994', '2017-06-12 10:17:15.994');
+INSERT INTO t_shop_alert_contact (id, biz_code, biz_desc, phone, email, status, gmt_create, gmt_modified) VALUES (8, 20, 'fn还款submit告警', '13026602991', 'hudongzhu@dafycredit.com', 1, '2017-06-12 10:17:15.994', '2017-06-12 10:17:15.994');
+INSERT INTO t_shop_alert_contact (id, biz_code, biz_desc, phone, email, status, gmt_create, gmt_modified) VALUES (10, 21, 'fn还款resubmit Job告警', '13026602991', 'hudongzhu@dafycredit.com', 1, '2017-06-12 10:17:15.994', '2017-06-12 10:17:15.994');

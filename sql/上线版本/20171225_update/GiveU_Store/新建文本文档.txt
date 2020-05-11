@@ -1,0 +1,4 @@
+-- 关闭测试开关
+UPDATE `t_config_setting` SET `val` = 'false' WHERE `cache_key` = 'setting:goods:call:traffic:dahan:switch';
+
+

@@ -1,0 +1,1 @@
+UPDATE `t_service_safeguard` SET `name` = '正品保证',`detail` = '商品供货由京东提供，保证正品货源' WHERE id = 4;

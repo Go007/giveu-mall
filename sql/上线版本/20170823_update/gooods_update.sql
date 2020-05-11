@@ -1,0 +1,1 @@
+UPDATE t_goods_call_traffic_supplier set denomination = 1000 where id = 34;

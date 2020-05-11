@@ -1,0 +1,1 @@
+alter table t_fn_account_binding_log add column fn_id_person int(11) default null comment '蜂鸟返回idPerson';

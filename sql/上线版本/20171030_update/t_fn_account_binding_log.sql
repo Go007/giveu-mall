@@ -1,0 +1,23 @@
+CREATE TABLE `t_fn_account_binding_log` (
+  `ab_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键Id',
+  `user_id` int(11) NOT NULL COMMENT '注册Id',
+  `id_person` int(11) NOT NULL COMMENT '用户Id',
+  `bank_no` varchar(64) DEFAULT NULL COMMENT '银行卡号',
+  `name` varchar(64) NOT NULL COMMENT '姓名',
+  `ident` varchar(64) NOT NULL COMMENT '身份证',
+  `latitude` varchar(64) DEFAULT NULL COMMENT '纬度',
+  `longitude` varchar(64) DEFAULT NULL COMMENT '经度',
+  `phone` varchar(64) DEFAULT NULL COMMENT '手机号',
+  `bank_name` varchar(64) DEFAULT NULL COMMENT '银行名称',
+  `bank_code` int(11) DEFAULT NULL COMMENT '银行代号',
+  `bank_change` int(11) DEFAULT NULL COMMENT '银行卡是否修改',
+  `phone_change` int(11) DEFAULT NULL COMMENT '手机号是否修改',
+  `is_bank_three` int(11) DEFAULT NULL COMMENT '银行卡是否验证通过',
+  `is_phone_three` int(11) DEFAULT NULL COMMENT '手机号是否验证通过',
+  `create_time` bigint(20) DEFAULT NULL COMMENT '创建时间',
+  `update_time` bigint(20) DEFAULT NULL COMMENT '更新时间',
+  `binding_result` int(11) DEFAULT NULL COMMENT '绑定结果（1-绑定成功 2-绑定失败）',
+  `cust_type` int(11) DEFAULT NULL,
+  `current_step` int(11) DEFAULT NULL,
+  PRIMARY KEY (`ab_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=256 DEFAULT CHARSET=utf8

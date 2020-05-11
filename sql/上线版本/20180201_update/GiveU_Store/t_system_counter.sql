@@ -1,0 +1,3 @@
+--  id增加两个参数
+INSERT INTO t_system_counter (`biz_name`, `prefix`, `is_date`, `date_format`, `min`, `current`, `max`, `is_loop`, `create_time`, `last_modify`, `step_size`, `length`) VALUES ('MALL_CODE', 'PN', '0', NULL, NULL, NULL, NULL, NULL, NULL, '1515219711558', '1000', '10');
+INSERT INTO t_system_counter (`biz_name`, `prefix`, `is_date`, `date_format`, `min`, `current`, `max`, `is_loop`, `create_time`, `last_modify`, `step_size`, `length`) VALUES ('PART_ID', 'CDN', '0', NULL, NULL, NULL, NULL, NULL, NULL, '1515219711558', '1000', '10');

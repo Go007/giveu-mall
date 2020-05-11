@@ -1,0 +1,5 @@
+8月24 后台激活流水表添加字段
+alter table t_user_potential add column create_time bigint(20) DEFAULT NULL COMMENT '创建时间';
+alter table t_user_potential add column update_time bigint(20) DEFAULT NULL COMMENT '更新时间';
+
+update t_user_potential,t_user set t_user_potential.create_time = t_user.register_time where t_user_potential.p_id_person = t_user.id_person or t_user_potential.fn_id_person=t_user.id_person;

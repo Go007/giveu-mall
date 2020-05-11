@@ -1,0 +1,55 @@
+1.项目开启https
+2.http://hongjiang.info/tag/tomcat/
+-Dmaven.test.skip=true
+
+netstat -anp | grep :8081
+
+
+
+
+
+13651549	陈垒	330681199605241623	18368631339  翁汪木
+13987264	杨小兰	510625198109034420	18090032066	 吕永文
+14048387	文硕	430611198506055016	13007470683	 胡栋柱	
+14374718	杨健	532528199603082712	18587255057  周临文
+14411280	代廷波	341227198905048436	13484269770  喻赛
+14739546	王宗勤	511526199506145227	15706773968  王佳文
+14847002	朱家林	532128198510206716	15068334765  周潜
+15107078	李瑞宏	530127199412020017	18087272224  苏建生
+
+
+order_detail
+interest_rate -
+fn_insurance_id -
+is_iphone is_phone m
+insurancefeemax +
+safeguard_names +
+id_credit +
+lates_repay_date +
+first_category_id +
+second_category_id +
+src_ip +
+
+order
+channel
+openid
+user_level
+random_code
+
+alter table order_detail add src_ip varchar(60);
+alter table order_detail add second_category_id bigint;
+alter table order_detail add first_category_id bigint;
+alter table order_detail add lates_repay_date varchar(60);
+alter table order_detail add id_credit varchar(60);
+alter table order_detail add safeguard_names varchar(360);
+alter table order_detail add insurancefeemax bigint;
+alter table order_detail change column is_iphone is_phone tinyint;
+alter table order_detail drop column interest_rate;  
+alter table order_detail drop column fn_insurance_id;  
+
+alter table `order` add channel varchar(60);
+alter table `order` add openid varchar(120);
+alter table `order` add user_level int(2);
+alter table `order` add random_code varchar(30);
+
+

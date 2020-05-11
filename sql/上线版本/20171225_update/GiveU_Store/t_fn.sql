@@ -1,0 +1,1 @@
+INSERT into t_config_setting(cache_key,val,remark,enabled,gmt_create, gmt_modified)VALUES('setting:fn:fn:enchashment:hasShProduct','false','是否打开随借随还',1,now(3), now(3));
