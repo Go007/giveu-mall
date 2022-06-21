@@ -29,7 +29,7 @@
 		<fastjson.version>1.2.31</fastjson.version>
 		<pagehelper.version>1.1.0</pagehelper.version>
 		<commons-httpclient.version>3.0</commons-httpclient.version>
-		<mysql.version>5.1.41</mysql.version>
+		<mysql.version>8.0.28</mysql.version>
 		<spring_boot.version>1.4.5.RELEASE</spring_boot.version>
 		<servlet-api.version>3.1.0</servlet-api.version>
 		<httpclient.version>4.5.3</httpclient.version>
